@@ -1,0 +1,499 @@
+/* STILE BLU CSS */
+
+* {
+    margin: 0;
+    font: inherit;
+    scroll-behavior: smooth;
+}
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+     scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+/* FONT */
+
+/* Font titolo regular */
+@font-face {
+    font-family: 'Self-Modern';
+    src: url('../fonts/self-modern_book_web.woff2') format('woff2'),
+    url('../fonts/self-modern_book_web.woff') format('woff'),
+    url('../fonts/self-modern_book.ttf') format('truetype');
+
+}
+
+/* Font titolo italic */
+@font-face {
+    font-family: 'Self-Modern-italic';
+    src: url('../fonts/self-modern_italic_web.woff2') format('woff2'),
+    url('../fonts/self-modern_italic_web.woff') format('woff'),
+    url('../fonts/self-modern_italic.ttf') format('truetype');
+}
+
+/* Font corpo */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Light.ttf') format('truetype');
+}
+
+/* DECLARING VARIABLES */
+
+:root {
+
+    /* Colors */
+    --clr-dark: #101729;
+    --clr-light: #F8F7F7;
+  
+
+    /* Fonts */
+    --ff-serif: 'Self-Modern', serif;
+    --ff-sans-serif: 'Inter', sans-serif;
+    --fs-serif-italic: 'Self-Modern-italic';
+  
+    --ff-body: var(--ff-sans-serif);
+    --ff-heading: var(--ff-serif);
+  
+    /* missing font weights */
+  
+    /* Desktop sizes */
+    --fs-d-logo: 1.6rem;
+    --fs-d-text: 1.25rem;
+    --fs-d-h2: 2.3rem;
+    --fs-d-h1: 5rem;
+  
+    /* Mobile sizes */
+    --fs-m-logo: 0.875rem;
+    --fs-m-text: 0.875rem;
+    --fs-m-h2: 1.5rem;
+    --fs-m-h1: 2rem;
+    --fs-m-home: 2.5rem;
+
+
+    /* Container */
+    --max-width-d: 73.438rem; /* 1175px */
+    --max-width-m: 20.438rem; /* 327px */
+    --page-margin: 4.3rem; /* 68.8px */
+    --page-margin-mobile: 2.5rem; /* 40px */
+
+    /* Footer */
+    --footer-d-top: 6.25rem; /* 100px */
+    --footer-d-bottom: 3.2rem; /* around 50px */
+    --footer-m-bottom: 1.5rem;
+
+
+    /* Nav bar gap */
+    --gap-d-nav: 4.25rem; /* 68px */
+    --gap-m-nav: 3.5rem; /* 56px */
+
+
+    /* Images */
+    --img-d-w: 42.5rem; /* 680px */ 
+    --img-d-h: 25.5rem; /* 408px */
+    --img-m-w: 20.438rem; /* 327px */
+    --img-m-h: 12.188rem; /* 195px */
+
+
+
+    /* Project gaps */
+    --gap-d-proj: 1.563rem; /* 25px */ /* gap between cover and text - horizontal */
+    --gap-d-tags: 0.625rem; /* 10px */
+    --gap-d-text: 1rem; /* 20px */ /* space between title and text */
+    --gap-m-proj: 1rem; /* 25px */ /* gap between cover and text - vertical */
+    --margin-m-proj: 3.5rem; /* 56px */ /* gap between each project */
+
+
+    /* Single Tags */
+    --tags-d-pad-lat: 0.688rem; /* 11px */
+    --tags-d-pad-vert: 0.438rem; /* 7px */
+    --tags-d-border: 0.938rem; /* 15px */
+
+    --tags-m-pad-lat: 0.438rem; /* 7px */
+    --tags-m-pad-vert: 0.313rem; /* 5px */
+    --tags-m-border: 0.688rem; /* 11px */
+
+    /* Presentation Text */
+    --home-d-margin-top: 8.438rem; /* 135px */
+    --home-d-margin-bottom: 16.25rem; /* 260px */
+    --home-m-margin-top: 6.563rem; /* 105px */
+    --home-m-margin-bottom: 10rem; /* 160px */
+    --home-m-width: 20rem; /* 320px */
+
+     /* Underline */
+     --und-thick: 0.063rem; /* 1px */
+     --und-distance: 0.313rem; /* 5px */
+
+   
+
+
+
+
+
+  }
+
+
+
+/* BG AND TEXT */
+body {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    font-size: var(--fs-d-text);
+    font-family: var(--ff-sans-serif);
+}
+
+p {
+    line-height: 130%;
+}
+
+
+/* GRID */
+
+.container {
+    --padding: 1rem;
+    
+    width: min(var(--max-width-d, 100%));
+    margin-inline: auto; /* margins enlarge and reduced */
+    margin-top: var(--page-margin);
+    margin-bottom: var(--page-margin);
+}
+
+
+/* NAV BAR + CONTACTS */
+
+/* items in line for nav bar */
+.nav-bar, .contacts, .nav-list-desktop {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-inline-start: auto;
+    gap: var(--gap-d-nav);
+    align-items: baseline;
+}
+
+
+.nav-bar a:link, .contacts a:link, .nav-list-mobile a:link {
+    color: var(--clr-light);
+    text-decoration: none;
+}
+
+
+/* NAV-BAR MOBILE */
+
+
+
+.mobile-nav-toggle {
+    display: none;
+    cursor: pointer;
+    display: flex;
+    }
+    
+    /* burger icon not visible in desktop */
+.mobile-nav-toggle, .icon-close {
+   display: none;
+    }
+    
+    
+    
+    @media screen and (max-width: 23.4375em) {
+        .mobile-nav-toggle, .icon-close {
+            display: block;
+            background-color: transparent;
+            border: 0;
+            
+        }
+
+
+        .nav-list-desktop {
+            display: none;
+        }
+    
+    .nav-list-mobile {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--clr-dark);
+        align-items: center;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        gap: var(--gap-m-nav);
+        min-height: 100vh;
+        place-content: center;
+        overflow: hidden;
+    }
+    
+    }
+
+
+
+/* LINKS */
+
+a:visited {
+    color: var(--clr-light);
+    text-decoration: none;
+    font: inherit;
+    
+}
+
+a:link {
+    color: var(--clr-light);
+   /* text-decoration-skip-ink: auto; le grazie sono visibili sopra la sottolineatura */
+    /* text-decoration-skip-ink: none; */
+    text-decoration: underline;
+    text-decoration-thickness: var(--und-thick);
+    text-underline-offset: var(--und-distance);
+
+}
+
+
+/* MANCA ANIMAZIONE HOVER */
+
+.logo {
+    margin-inline-end: auto;
+    /* font-family: 'Self-Modern', serif; */
+    font-family: var(--fs-serif-italic);
+    font-size: 1.6rem;
+}
+
+/* TEXT STYLE*/
+
+h1 {
+    font-family: var(--ff-serif);
+    font-size: var(--fs-d-h1);
+}
+
+.home-header {
+    margin-top: var(--home-d-margin-top); /* space between header and nav bar */
+    margin-bottom: var(--home-d-margin-bottom); /* space between header and works */
+    /* letter-spacing: 1.5px; */
+}
+
+h2 {
+    font-family: var(--ff-serif);
+    font-size: var(--fs-d-h2);
+    margin-top: 0;
+    margin-bottom: var(--gap-d-text);
+}
+
+.italic {
+    font-family: var(--fs-serif-italic);
+    display: inline-block;
+}
+
+
+
+/* WORKS */
+
+/* REFERENCE GRID */
+.row-grid {
+    display: flex;
+    gap: var(--gap-m-proj);
+    
+}
+
+.col-ref {
+    background-color: lightgray;
+    color: black;
+    flex: 1;
+}
+/* END REF GRID */
+
+
+
+.row-works {
+    display: flex;
+    gap: var(--gap-d-proj); /* gap between text and cover */
+    align-items: center;
+    margin-top: var(--gap-d-proj); /* gap between each project */
+}
+
+.column-cover {
+    display: flex;
+    width: var(--img-d-w);
+    /* height: var(--img-d-h); */
+    flex: 3;
+}
+
+
+
+
+
+.tag-parent {
+    display: flex;
+    flex-direction: row;
+    margin-inline-end: auto;
+    gap: var(--gap-d-tags);
+    margin-top: calc(var(--gap-d-text)* 1.7);
+}
+
+.tag {
+    font-family: var(--fs-serif-italic);
+    font-size: var(--fs-d-text);
+    width: fit-content; /* right width */
+
+    /* distance between content and border */
+    padding-left: var(--tags-d-pad-lat);
+    padding-right: calc(var(--tags-d-pad-lat) + 0.05rem);
+    padding-top: var(--tags-d-pad-vert);
+    padding-bottom: var(--tags-d-pad-vert);
+
+    /* border style */
+    border-style: solid;
+    border-radius: var(--tags-d-border);
+    border-color: var(--clr-light);
+    border-width: thin;
+}
+
+
+
+img.cover {
+    width: var(--img-d-w);
+    height: var(--img-d-h);
+    object-fit: cover;
+}
+
+/* img.icon {
+    object-fit: fill;
+} */
+
+
+/* FOOTER */
+
+.footer {
+    margin-top: var(--footer-d-top);
+    margin-bottom: var(--footer-d-bottom);
+}
+
+.contacts {
+    justify-content: flex-end;
+}
+
+
+/* UTILITY CLASSES */
+.visually-hidden {
+position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.break-mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 23.4375em) { /* 375px for all browsers */
+    
+.container {
+    width: var(--max-width-m);
+    margin-inline: auto; /* 24 */
+    margin-top: var(--page-margin-mobile);
+}
+
+.home-header {
+    font-size: var(--fs-m-home);
+    padding-top: 0;
+    width: var(--home-m-width);
+    margin-top: var(--home-m-margin-top);
+    margin-bottom: var(--home-m-margin-bottom);
+}
+
+    h1 {
+        font-size: var(--fs-m-h1);
+      }
+
+      .row-works {
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column wrap;
+        align-items: stretch;
+        min-width: 0;
+        flex-wrap: nowrap;
+        gap: var(--gap-m-proj);
+        margin-top: var(--margin-m-proj); /* gap between each project */
+      }
+
+    h2 {
+        font-size: var(--fs-m-h2);
+        margin-bottom: calc(var(--gap-d-text) * 0.8);
+    }
+
+    p, .tag {
+        font-size: var(--fs-m-text);
+    }
+.home-header {
+    justify-content: center;
+}
+
+img {
+    max-width: var(--img-m-w);
+    max-height: var(--img-m-h);
+
+}
+
+img.icon-menu {
+    width: var(--gap-m-proj);
+    height: auto;
+
+}
+
+.column-cover {
+    max-width: var(--max-width-m);
+}
+
+
+.contacts {
+    flex-direction: column;
+    font-size: var(--fs-m-text);
+    gap: var(--gap-d-tags);
+    margin-top: 2.5rem;
+}
+
+.tag-parent {
+    margin-top: calc(var(--gap-d-text) * 0.8);
+}
+
+.footer {
+    margin-bottom: var(--footer-m-bottom);
+    margin-top: var(--footer-d-bottom);
+}
+
+.logo {
+    font-size: 0.875rem;
+}
+
+.tag {
+    border-radius: var(--tags-m-border);
+    padding-left: var(--tags-m-pad-lat);
+    padding-right: calc(var(--tags-m-pad-lat) + 0.05rem);
+    padding-top: var(--tags-m-pad-vert);
+    padding-bottom: var(--tags-m-pad-vert);
+}
+
+.break-mobile {
+    display: inline-block
+}
+
+}
+
+
+

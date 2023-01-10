@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/white.css" type="text/css" rel="stylesheet" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+     <!-- SmoothScroll -->
+     <link rel="stylesheet" href="../../css/SmoothScroll.css" />
+     <script src="../../javascript/SmoothScroll.min.js"></script>
+    <title>Travel of the 20th century</title>
+    <link rel="icon" type="image/x-icon" href="../../icons/favicon.svg">
+</head>
+<body>
+
+    <div class="container">
+        <div class="primary-navigation" x-data="{ open: false }">
+            <ul class="nav-bar">
+                <li class="logo"><a href="../../home.html">Federica Pasquini</a></li>
+                <button  @click="open = !open" class="mobile-nav-toggle">
+                    <span x-show="open">
+                    <img class="icon" src="../../icons/close-blue.svg" style="width: 25px" alt=""></span>
+                    <span x-show="!open"><img class="icon" src="../../icons/menu-blue.svg" style="width: 25px" alt="">
+
+                    </span>
+            </button>
+    
+            <div class="nav-list-desktop">
+                <li><a href="../../home.html#works-section">WORKS</a></li>
+                <li><a href="../../about/about.html">ABOUT</a></li>
+                <li><a href="#contact-section">CONTACT</a></li>
+            </div>
+            
+        </ul>
+        <div class="nav-list-mobile" x-show="open" x-transition>
+            <li><a href="../../home.html#works-section">WORKS</a></li>
+            <li><a href="../../../about/about.html">ABOUT</a></li>
+            <li><a href="#contact-section">CONTACT</a></li>
+        </div>
+        </div>
+
+<!--WORK-PRESENTATION (parent)-->
+    <div class="work-pres">
+    <div class="work-title"><h1>Travel of the<br>20th century</h1></div> <!-- WORK-TITLE (child) -->
+    <div class="work-det">
+        <div class="tag-parent">
+        <div class="tag">Editorial</div>
+    </div>
+        <div class="text">
+        <p class="semibold">THE CHALLENGE</p>
+        <p>Portray the history of the 20th century
+            <br class="break-mobile">in a different way</p>
+        
+        <br>
+        <p class="semibold">ROLE</p>
+        <p>Design concept, Editorial content, Layout design</p>
+           
+
+    </div>
+    </div>  <!-- WORK-DET (child) -->
+</div>  <!-- END WORK-PRESENTATION -->
+
+
+    <div class="row-right">  <!--ROW PARENT -->
+<div>
+    <!-- <h2>The project</h2> -->
+    <p>The 20th century was all about change, mostly because of the historical tragedies and big social, economical and civil conquests. What a better way to tell the story about this change than travel?
+        <br class="break-desk">Not only as a metaphor of this big change, but also because it’s when travel originated<br class="break-mobile">and developed as we know
+        <br class="break-desk">it today.</p></div>
+
+    <div>
+        <img class="img-7-col" src="04_img_01.jpg" alt="Travel spread">
+    </div>
+    </div> <!--END ROW PARENT -->
+
+    <div class="row-img-full">
+        <img class="img-12-col" src="04_img_02.jpg" alt="Berlin Wall spread">
+     </div>
+
+<div class="img-group">
+     <div class="row-img-2 no-margin">
+        <img class="img-7-col" src="04_img_03.jpg" alt="Second opening chapter spread">
+        <img class="img-5-col" src="04_img_04.jpg" alt="Third opening chapter spread">
+    </div>
+     <div class="row-reverse">  <!--ROW PARENT -->
+        <div><p>The timeline is visually represented as a unique line in each opening chapter,
+            <br class="break-desk">which eventually ends up in the front cover, shaping the world where
+            <br class="break-desk">we live in today.</p></div>
+            <div>
+                <img class="img-7-col" src="04_cover.jpg" alt="Book cover">
+            </div>
+            </div> <!--END ROW PARENT -->
+        </div>
+
+
+
+<div class="img-group">
+    <img class="img-12-col" src="04_img_05.jpg" alt="Apollo 11 spread">
+    <div class="row-img-2">
+    <img class="img-6-col" src="04_img_06.jpg" alt="First opening chapter spread">
+    <img class="img-6-col" src="04_img_07.jpg" alt="Pole discovery spread">
+</div>
+</div>
+     
+
+    <div class="row-reverse">  <!--ROW PARENT -->
+        <div><p>The travel of the 20th century is concluded,
+            <br class="break-mobile">but we’re still tracing this line, that’s why it is
+            <br class="break-mobile">so important to know
+            <br class="break-desk">the different events
+            <br class="break-mobile">of this long journey.</p></div>
+        
+            <div>
+                <img class="img-7-col" src="04_img_08.jpg" alt="Cover closeup">
+            </div>
+            </div> <!--END ROW PARENT -->
+
+
+
+            
+
+<div class="next">
+<p>NEXT PROJECT</p>
+<h2><a href="../05/05.html">When in doubt, use Caslon</a></h2>
+</div>
+
+<!-- FOOTER -->
+<div id="contact-section">
+<h1 class="footer">Want to work together or just say hi? <a href="mailto:federica.pasquini@gmail.com" target="_blank">Let’s chat!</a></h1>
+<ul class="contacts">
+    <li><a href="https://www.behance.net/federicapasquini" target="_blank">BEHANCE</a></li>
+    <li><a href="https://www.linkedin.com/in/federica-pasquini-0403c2000" target="_blank">LINKEDIN</a></li>
+    <li><a href="https://www.instagram.com/chiccaforniaroll/?hl=it" target="_blank">INSTAGRAM</a></li>
+</ul>
+</div> 
+
+</div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/white.css" type="text/css" rel="stylesheet" />
+    <link href="../css/hamburgers.css" type="text/css" rel="stylesheet" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+<!-- SmoothScroll -->
+    <!-- <link rel="stylesheet" href="../css/SmoothScroll.css" />
+<script src="../javascript/SmoothScroll.min.js"></script> -->
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="../../icons/favicon.svg">
+</head>
+<body>
+
+    <div class="viewport">
+        <div class="container">
+            <div class="primary-navigation" x-data="{ open: false }">
+            <ul class="nav-bar">
+                <li class="logo"><a href="../home.html">Federica Pasquini</a></li>
+                <button  @click="open = !open" class="mobile-nav-toggle">
+                    <span x-show="open">
+                    <img class="icon" src="../icons/close-blue.svg" style="width: 25px" alt=""></span>
+                    <span x-show="!open"><img class="icon" src="../icons/menu-blue.svg" style="width: 25px" alt="">
+
+                    </span>
+            </button>
+    
+    
+            <div class="nav-list-desktop">
+                <li><a href="../home.html#works-section">WORKS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="#contact-section">CONTACT</a></li>
+            </div>
+            
+        </ul>
+        <div class="nav-list-mobile" x-show="open" x-collapse>
+            <li><a href="../home.html#works-section">WORKS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="#contact-section">CONTACT</a></li>
+        </div>
+        </div>
+    
+
+<!--WORK-PRESENTATION (parent)-->
+    <div class="work-pres">
+    <div class="work-title"><h1>My <div class="italic">(long)</div> story <div class="italic">(short)</div></h1></div> <!-- WORK-TITLE (child) -->
+    <div class="work-det-about">
+        <p>Merging my passions and looking<br>
+        at the bright side of things is my lifestyle.
+    </p>
+     
+    </div>  <!-- WORK-DET (child) -->
+</div>  <!-- END WORK-PRESENTATION -->
+
+
+  
+
+    <!-- ABOUT ME -->
+    <div class="about-me">
+<div class="me-pic">
+    <img class="img-6-col" id="profile" src="me-1.JPG" alt="Profile picture">
+</div>
+<div class="me-text">
+    <p>I’m Federica, a 22-year-old designer from Bergamo, a small town in Italy. Ever since I had possession of a computer, I liked putting together videos and music to communicate a message,
+        <br class="break-desk">but especially to move those who were watching. This is how I ended up studying design, discovering more aspects that I love about this field. About my creative process, I never let
+        <br class="break-desk">an idea alone, I always try to develop it and explore it in multiple different ways until it “clicks”.</p>
+</div> 
+</div> <!-- END ABOUT ME -->
+
+
+<!-- PROF BACKGROUND -->
+<div class="prof-bg">
+    <div class="cv">
+        <h2>Here's <a href="Federica_Pasquini_CV.pdf" target="_blank">my professional<br>background</a></h2>
+    </div>
+
+      <!--REF COLUMNS -->
+      <!-- <div class="row-grid">
+        <div class="col-ref">col ref 1</div>
+        <div class="col-ref">col ref 2</div>
+        <div class="col-ref">col ref 3</div>
+        <div class="col-ref">col ref 4</div>
+        <div class="col-ref">col ref 5</div>
+        <div class="col-ref">col ref 6</div>
+        <div class="col-ref">col ref 7</div>
+        <div class="col-ref">col ref 8</div>
+        <div class="col-ref">col ref 9</div>
+        <div class="col-ref">col ref 10</div>
+        <div class="col-ref">col ref 11</div>
+        <div class="col-ref">col ref 12</div>
+    </div>  -->
+    <!-- END REF COLUMNS -->
+    <div class="thin-columns">
+    <div class="service">
+        <h2>What I do</h2>
+        <p>Graphic Design<br>Brand Identity<br>Copywriting<br>Concept Design<br>Video Editing</p>
+    </div>
+    <div class="tools">
+        <h2>Tools</h2>
+        <p>Premiere Pro
+            <br>After Effects
+            <br>Media Encoder
+            <br>Audition
+            <br>DaVinci Resolve
+            <br>Illustrator
+            <br>Indesign
+            <br>Photoshop
+            <br>Lightroom
+            <br>Figma
+            <br>Adobe XD</p>
+        </div>
+    </div>
+</div> <!-- END PROF BACKGROUND -->
+
+<!-- TRAVEL -->
+<div class="travel">
+    <div class="travel-text">
+       <h2>I’m always ready to learn new<br class="break-desk">
+        things, challenge myself<br class="break-desk">
+        and travel around the world!<br class="break-desk">
+        <br class="break-mobile"><br class="break-mobile">(Or my surroundings <br class="break-mobile">when<br class="break-desk">
+        a pandemic <br class="break-mobile">is going around)</h2>
+    </div>
+    <div class="travel-stamps-gap">
+    <div class="travel-stamps">
+        <p>Places I've lived so far</p>
+        <img class="stamps" src="stamp-1.png" alt="Scottish stamp">
+        <img class="stamps" src="stamp-2.png" alt="New mexican stamp">
+        <img class="stamps" src="stamp-3.png" alt="Italian stamp">
+        
+</div>
+</div>
+</div> <!-- TRAVEL -->
+
+<!-- FOOTER -->
+<div id="contact-section">
+    <h1 class="footer">Want to work together or just say hi? <a href="mailto:federica.pasquini@gmail.com" target="_blank">Let’s chat!</a></h1>
+    <ul class="contacts">
+        <li><a href="https://www.behance.net/federicapasquini" target="_blank">BEHANCE</a></li>
+        <li><a href="https://www.linkedin.com/in/federica-pasquini-0403c2000" target="_blank">LINKEDIN</a></li>
+        <li><a href="https://www.instagram.com/chiccaforniaroll/?hl=it" target="_blank">INSTAGRAM</a></li>
+    </ul>
+</div>
+
+</div>
+<script src="../javascript/javascript.js"></script>
+
+</div>
+
+
+</body>
+</html>

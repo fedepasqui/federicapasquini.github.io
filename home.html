@@ -1,0 +1,163 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/blue.css" type="text/css" rel="stylesheet" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <!-- SmoothScroll -->
+    <link rel="stylesheet" href="../css/SmoothScroll.css" />
+<script src="../javascript/SmoothScroll.min.js"></script>
+    <title>Federica Pasquini</title>
+    <link rel="icon" type="image/x-icon" href="../../icons/favicon.svg">
+</head>
+<body>
+    <div class="container">
+        <div class="primary-navigation" x-data="{ open: false }">
+        <ul class="nav-bar">
+            <li class="logo"><a href="home.html">Federica Pasquini</a></li>
+            <button  @click="open = !open" class="mobile-nav-toggle">
+                <span x-show="open">
+                <img class="icon" src="icons/close-white.svg" style="width: 25px" alt=""></span>
+                <span x-show="!open"><img class="icon" src="icons/menu-white.svg" style="width: 25px" alt="">
+                </span>
+        </button>
+
+
+        <div class="nav-list-desktop">
+            <li><a href="#works-section">WORKS</a></li>
+            <li><a href="about/about.html">ABOUT</a></li>
+            <li><a href="#contact-section">CONTACT</a></li>
+        </div>
+        
+    </ul>
+    <div class="nav-list-mobile" x-show="open" x-transition>
+        <li><a href="#works-section">WORKS</a></li>
+        <li><a href="about/about.html">ABOUT</a></li>
+        <li><a href="#contact-section">CONTACT</a></li>
+    </div>
+    </div>
+
+        
+    <h1 class="home-header">I’m Federica, <br class="break-mobile">an energetic <br class="break-mobile"> <div class="italic">graphic designer</div> ready to <br class="break-mobile">take up your <br class="break-mobile">next challenge.</h1>
+
+
+    <!--REF COLUMNS -->
+    <!-- <div class="row-grid">
+        <div class="col-ref">col ref 1</div>
+        <div class="col-ref">col ref 2</div>
+        <div class="col-ref">col ref 3</div>
+        <div class="col-ref">col ref 4</div>
+        <div class="col-ref">col ref 5</div>
+       <div class="col-ref">col ref 6</div>
+        <div class="col-ref">col ref 7</div>
+        <div class="col-ref">col ref 8</div>
+        <div class="col-ref">col ref 9</div>
+        <div class="col-ref">col ref 10</div>
+        <div class="col-ref">col ref 11</div>
+        <div class="col-ref">col ref 12</div>
+    </div> -->
+
+
+<!-- 01 - MOR -->
+    <div class="row-works" id="works-section"><a href="works/01/01.html">
+    <div class="column-cover"><img class="cover" src="works/01/01_img_02.jpg"></div>
+    <div class="column-text">
+        <h2><a href="works/01/01.html">Mor, Nature at your feet</a></h2>
+        <p>What if we had to pay for every single sheet? Would we be willing to do so? These questions started a speculative research about awareness and environment.</p>
+       <div class="tag-parent">
+        <div class="tag">Branding</div>
+        <div class="tag">Video</div>
+    </div> <!-- TAG-PARENT -->
+    </div> <!-- COLUMN-TEXT -->
+</div> <!-- ROW-WORKS -->
+
+<!-- 02 - LIT -->
+<div class="row-works"><a href="works/02/02.html">
+    <div class="column-cover"><img class="cover" src="works/02/02_cover.jpg"></div>
+    <div class="column-text">
+        <h2><a href="works/02/02.html">Lit, Turn the tide</a></h2>
+        <p>Making tidal energy not just a bold choice for some people, but a bold answer for all people was the aim of this branding project.</p>
+        <div class="tag-parent">
+            <div class="tag">Branding</div>
+            <div class="tag">Video</div>
+        </div> <!-- TAG-PARENT -->
+    </div> <!-- COLUMN-TEXT -->
+</div> <!-- ROW-WORKS -->
+
+<!-- 03 - THAT'S HOW -->
+<div class="row-works"><a href="works/03/03.html">
+    <div class="column-cover"><img class="cover" src="works/03/03_cover.jpg"></div>
+    <div class="column-text">
+        <h2><a href="works/03/03.html">That's How We Trick You</a></h2>
+        <p>Advertising is a commonly discussed topic, but what about the one that hides and silently tricks us?
+            It’s called hidden advertising.</p>
+        <div class="tag-parent">
+            <div class="tag">Editorial</div>
+        </div> <!-- TAG-PARENT -->
+    </div> <!-- COLUMN-TEXT -->
+</div> <!-- ROW-WORKS -->
+
+<!-- 04 - 900 -->
+<div class="row-works"><a href="works/04/04.html">
+    <div class="column-cover"><img class="cover" src="works/04/04_cover.jpg"></div>
+    <div class="column-text">
+        <h2><a href="works/04/04.html">Travel of 20th century</a></h2>
+        <p>The 20th century was all about change. What a better way to tell the story about this change than travel?</p>
+        <div class="tag-parent">
+            <div class="tag">Editorial</div>
+        </div> <!-- TAG-PARENT -->
+    </div> <!-- COLUMN-TEXT -->
+</div>  <!-- ROW-WORKS -->
+
+<!-- 05 - CASLON -->
+<div class="row-works"><a href="works/05/05.html">
+    <div class="column-cover"><img class="cover" src="works/05/05_cover.jpg"></div>
+    <div class="column-text">
+        <h2><a href="works/05/05.html">When in doubt,<br> use Caslon</a></h2>
+        <p>A Caslon Specimen which celebrates the unique feautres of this typeface in just a few pages.</p>
+        <div class="tag-parent">
+            <div class="tag">Editorial</div>
+        </div> <!-- TAG-PARENT -->
+    </div> <!-- COLUMN-TEXT -->
+</div> <!-- ROW-WORKS -->
+
+<!-- 06 - BERGAMO -->
+<div class="row-works"><a href="works/06/06.html">
+    <div class="column-cover"><img class="cover" src="works/06/06_cover.jpg"></div>
+    <div class="column-text">
+        <h2><a href="works/06/06.html">Bergamo, My View</a></h2>
+        <p>The beauty of my hometown Bergamo, besides its fame for the pandemic, told though design.</p>
+        <div class="tag-parent">
+            <div class="tag">Editorial</div>
+        </div> <!-- TAG-PARENT -->
+    </div> <!-- COLUMN-TEXT -->
+</div> <!-- ROW-WORKS -->
+
+<!-- 07 - ERASMUS -->
+<div class="row-works"><a href="works/07/07.html">
+    <div class="column-cover"><img class="cover" src="works/07/07_cover.jpg"></div>
+    <div class="column-text">
+        <h2><a href="works/07/07.html">Always an Erasmus</a></h2>
+        <p>Now more than ever, with a general anti-immigration sentiment rising and the war in Ucraine, there’s a problem with accepting the diversity.</p>
+        <div class="tag-parent">
+            <div class="tag">Video</div>
+        </div> <!-- TAG-PARENT -->
+    </div> <!-- COLUMN-TEXT -->
+</div> <!-- ROW-WORKS -->
+
+<div id="contact-section">
+<h1 class="footer">Let's create something great together, <a href="mailto:federica.pasquini@gmail.com" target="_blank">shall we?</a></h1>
+<ul class="contacts">
+    <li><a href="https://www.behance.net/federicapasquini" target="_blank">BEHANCE</a></li>
+    <li><a href="https://www.linkedin.com/in/federica-pasquini-0403c2000" target="_blank">LINKEDIN</a></li>
+    <li><a href="https://www.instagram.com/chiccaforniaroll/?hl=it" target="_blank">INSTAGRAM</a></li>
+</ul>
+</div>
+
+
+
+
+</div>     <!-- CONTAINER -->
+</body>
+</html>

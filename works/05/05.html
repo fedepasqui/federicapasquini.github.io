@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/white.css" type="text/css" rel="stylesheet" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+     <!-- SmoothScroll -->
+     <link rel="stylesheet" href="../../css/SmoothScroll.css" />
+     <script src="../../javascript/SmoothScroll.min.js"></script>
+    <title>When in doubt, Use Caslon</title>
+    <link rel="icon" type="image/x-icon" href="../../icons/favicon.svg">
+</head>
+<body>
+
+    <div class="container">
+        <div class="primary-navigation" x-data="{ open: false }">
+            <ul class="nav-bar">
+                <li class="logo"><a href="../../home.html">Federica Pasquini</a></li>
+                <button  @click="open = !open" class="mobile-nav-toggle">
+                    <span x-show="open">
+                    <img class="icon" src="../../icons/close-blue.svg" style="width: 25px" alt=""></span>
+                    <span x-show="!open"><img class="icon" src="../../icons/menu-blue.svg" style="width: 25px" alt="">
+
+                    </span>
+            </button>
+    
+    
+            <div class="nav-list-desktop">
+                <li><a href="../../home.html#works-section">WORKS</a></li>
+                <li><a href="../../about/about.html">ABOUT</a></li>
+                <li><a href="#contact-section">CONTACT</a></li>
+            </div>
+            
+        </ul>
+        <div class="nav-list-mobile" x-show="open" x-transition>
+            <li><a href="../../home.html#works-section">WORKS</a></li>
+            <li><a href="../../../about/about.html">ABOUT</a></li>
+            <li><a href="#contact-section">CONTACT</a></li>
+        </div>
+        </div>
+
+<!--WORK-PRESENTATION (parent)-->
+    <div class="work-pres">
+    <div class="work-title"><h1>When in doubt,<br>use Caslon</h1></div> <!-- WORK-TITLE (child) -->
+    <div class="work-det">
+        <div class="tag">Editorial</div>
+        <div class="text">
+        <p class="semibold">THE CHALLENGE</p>
+        <p>Showcase the typeface Caslon in just 8 pages</p>
+
+        <br>
+        <p class="semibold">ROLE</p>
+        <p>Editorial content,
+        Layout design</p>
+    </div>
+    </div>  <!-- WORK-DET (child) -->
+</div>  <!-- END WORK-PRESENTATION -->
+
+
+
+    <div class="row-right">  <!--ROW PARENT -->
+        <div>
+            <!-- <h2>The project</h2> -->
+            <p>Bruno Munari once said, “to complicate is simple, to simplify is complicated”.
+                <br class="break-desk">This was the challenge for the project:
+                <br class="break-desk">tell the story
+    and the beauty
+    <br class="break-mobile">of a typeface, while using it for expressive typography,
+    <br class="break-desk">in just 8 pages (first and fourth
+    <br class="break-mobile">cover included).</p></div>
+    <div>
+        <img class="img-7-col" src="05_cover.jpg" alt="Specimen cover">
+    </div>
+    </div> <!--END ROW PARENT -->
+
+
+
+    <div class="row-img-full">
+        <img class="img-12-col" src="05_img_03.jpg" alt="Character history">
+    </div>
+        
+            <div class="row-img-full">
+                <img class="img-12-col" src="05_img_01.jpg" alt="Expressive typography">
+            </div>
+    
+            <div class="row-img-full">
+                <img class="img-12-col" src="05_img_02.jpg" alt="Formal characteristics">
+            </div>
+   
+    
+<div class="next">
+<p>NEXT PROJECT</p>
+<h2><a href="../06/06.html">Bergamo, My View</a></h2>
+</div>
+
+<!-- FOOTER -->
+<div id="contact-section">
+<h1 class="footer">Want to work together or just say hi? <a href="mailto:federica.pasquini@gmail.com" target="_blank">Let’s chat!</a></h1>
+<ul class="contacts">
+    <li><a href="https://www.behance.net/federicapasquini" target="_blank">BEHANCE</a></li>
+    <li><a href="https://www.linkedin.com/in/federica-pasquini-0403c2000" target="_blank">LINKEDIN</a></li>
+    <li><a href="https://www.instagram.com/chiccaforniaroll/?hl=it" target="_blank">INSTAGRAM</a></li>
+</ul>
+</div>
+                
+
+</div>
+</body>
+</html>

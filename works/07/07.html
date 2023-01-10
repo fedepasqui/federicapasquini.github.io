@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/white.css" type="text/css" rel="stylesheet" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+     <!-- SmoothScroll -->
+     <link rel="stylesheet" href="../../css/SmoothScroll.css" />
+     <script src="../../javascript/SmoothScroll.min.js"></script>
+    <title>Always an Erasmus</title>
+    <link rel="icon" type="image/x-icon" href="../../icons/favicon.svg">
+</head>
+<body>
+
+    <div class="container">
+        <div class="primary-navigation" x-data="{ open: false }">
+            <ul class="nav-bar">
+                <li class="logo"><a href="../../home.html">Federica Pasquini</a></li>
+                <button  @click="open = !open" class="mobile-nav-toggle">
+                    <span x-show="open">
+                    <img class="icon" src="../../icons/close-blue.svg" style="width: 25px" alt=""></span>
+                    <span x-show="!open"><img class="icon" src="../../icons/menu-blue.svg" style="width: 25px" alt="">
+
+                    </span>
+            </button>
+    
+    
+            <div class="nav-list-desktop">
+                <li><a href="../../home.html#works-section">WORKS</a></li>
+                <li><a href="../../about/about.html">ABOUT</a></li>
+                <li><a href="#contact-section">CONTACT</a></li>
+            </div>
+            
+        </ul>
+        <div class="nav-list-mobile" x-show="open" x-transition>
+            <li><a href="../../home.html#works-section">WORKS</a></li>
+            <li><a href="../../../about/about.html">ABOUT</a></li>
+            <li><a href="#contact-section">CONTACT</a></li>
+        </div>
+        </div>
+
+<!--WORK-PRESENTATION (parent)-->
+    <div class="work-pres">
+    <div class="work-title"><h1>Always<br>an Erasmus</h1></div> <!-- WORK-TITLE (child) -->
+    <div class="work-det">
+        <div class="tag-parent">
+       <div class="tag">Video</div>
+    </div>
+        <div class="text">
+        <p class="semibold">THE CHALLENGE</p>
+        <p>Communicate the importance
+            <br class="break-mobile">of cultural exchange</p>
+        
+        <br>
+        <p class="semibold">ROLE</p>
+        <p>Video concept, direction and editing</p>
+
+        
+    </div>
+    </div>  <!-- WORK-DET (child) -->
+</div>  <!-- END WORK-PRESENTATION -->
+
+
+
+   
+
+    <p class="row-text">Now more than ever, with a general anti-immigration sentiment
+        <br class="break-desk">rising and the war in Ucraine, there’s a problem with accepting the
+        <br class="break-desk">diversity. I wanted to talk about it and raise awareness through
+        <br class="break-desk">design by telling why cultural exchange is so important to
+        <br class="break-desk"> overcome this issue. This not only by telling the fun parts
+        <br class="break-desk">of the Erasmus, but also by sharing other testimonies from students
+        <br class="break-desk">who lived this experience and my reflection that stresses its impact
+        <br class="break-desk">on the people.</p>
+
+
+
+    <div class="rwd-video embed">
+        <iframe src="https://www.youtube.com/embed/FS76eFigYq4" allowfullscreen="" frameborder="0" height="315" width="560">
+        </iframe>
+    </div>
+
+    <!-- <div class="embed"><iframe width="1175" height="660.9375" src="https://www.youtube.com/embed/FS76eFigYq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div> -->
+
+            
+
+<div class="next">
+<p>FIRST PROJECT</p>
+<h2><a href="../01/01.html">Mor, Nature at your feet</a></h2>
+</div>
+
+<!-- FOOTER -->
+<div id="contact-section">
+<h1 class="footer">Want to work together or just say hi? <a href="mailto:federica.pasquini@gmail.com" target="_blank">Let’s chat!</a></h1>
+<ul class="contacts">
+    <li><a href="https://www.behance.net/federicapasquini" target="_blank">BEHANCE</a></li>
+    <li><a href="https://www.linkedin.com/in/federica-pasquini-0403c2000" target="_blank">LINKEDIN</a></li>
+    <li><a href="https://www.instagram.com/chiccaforniaroll/?hl=it" target="_blank">INSTAGRAM</a></li>
+</ul>
+</div>
+                
+
+</div>
+</body>
+</html>

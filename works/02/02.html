@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/white.css" type="text/css" rel="stylesheet" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <!-- SmoothScroll -->
+    <link rel="stylesheet" href="../../css/SmoothScroll.css" />
+<script src="../../javascript/SmoothScroll.min.js"></script>
+    <title>Lit, Turn the tide</title>
+    <link rel="icon" type="image/x-icon" href="../../icons/favicon.svg">
+</head>
+<body>
+
+    <div class="container">
+        <div class="primary-navigation" x-data="{ open: false }">
+            <ul class="nav-bar">
+                <li class="logo"><a href="../../home.html">Federica Pasquini</a></li>
+                <button  @click="open = !open" class="mobile-nav-toggle">
+                    <span x-show="open">
+                    <img class="icon" src="../../icons/close-blue.svg" style="width: 25px" alt=""></span>
+                    <span x-show="!open"><img class="icon" src="../../icons/menu-blue.svg" style="width: 25px" alt="">
+
+                    </span>
+            </button>
+    
+    
+            <div class="nav-list-desktop">
+                <li><a href="../../home.html#works-section">WORKS</a></li>
+                <li><a href="../../about/about.html">ABOUT</a></li>
+                <li><a href="#contact-section">CONTACT</a></li>
+            </div>
+            
+        </ul>
+        <div class="nav-list-mobile" x-show="open" x-transition>
+            <li><a href="../../home.html#works-section">WORKS</a></li>
+            <li><a href="../../about/about.html">ABOUT</a></li>
+            <li><a href="#contact-section">CONTACT</a></li>
+        </div>
+        </div>
+
+<!--WORK-PRESENTATION (parent)-->
+    <div class="work-pres">
+    <div class="work-title"><h1>Lit,<br>Turn the tide</h1></div> <!-- WORK-TITLE (child) -->
+    <div class="work-det">
+        <div class="tag-parent">
+        <div class="tag">Branding</div> <div class="tag">Video</div>
+    </div>
+        <div class="text">
+        <p class="semibold">THE CHALLENGE</p>
+        <p>Design a bold tidal energy brand that stands out</p>
+        
+        <br>
+        <p class="semibold">ROLE</p>
+        <p>Branding, Motion design, Copywriting</p>
+
+            <br>
+        <p class="semibold">ALSO ON</p>
+        <p> <a href="https://www.behance.net/gallery/123612559/Lit-a-bold-branding-project" target="_blank">Behance</a></p>
+           
+
+    </div>
+    </div>  <!-- WORK-DET (child) -->
+</div>  <!-- END WORK-PRESENTATION -->
+
+
+    <!--REF COLUMNS -->
+    <!-- <div class="row-grid">
+        <div class="col-ref">col ref 1</div>
+        <div class="col-ref">col ref 2</div>
+        <div class="col-ref">col ref 3</div>
+        <div class="col-ref">col ref 4</div>
+        <div class="col-ref">col ref 5</div>
+        <div class="col-ref">col ref 6</div>
+        <div class="col-ref">col ref 7</div>
+        <div class="col-ref">col ref 8</div>
+        <div class="col-ref">col ref 9</div>
+        <div class="col-ref">col ref 10</div>
+        <div class="col-ref">col ref 11</div>
+        <div class="col-ref">col ref 12</div>
+    </div> -->
+     <!-- END REF COLUMNS -->
+
+
+    <div class="row-right">  <!--ROW PARENT -->
+<div>
+    <!-- <h2>The project</h2> -->
+    <p>Something that stands out. <br class="break-desk">Something that promotes diversity.<br class="break-desk"> That’s how Lit was born: to provide energy and to create a supportive environment, where each person contributes with<br class="break-desk">his own uniqueness, to build a proactive community. Finally realizing the vision <br class="break-desk">of the brand: make tidal energy not just <br class="break-desk">a bold choice for some people,<br class="break-desk">but a bold answer for all people.</p></div>
+
+    <div>
+        <img class="img-7-col" src="02_img_01.jpg" alt="hero section of the brand website">
+    </div>
+    </div> <!--END ROW PARENT -->
+
+    <div>
+    <div class="embed" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/640922958?h=11ab6c22d0&title=0&byline=0&portrait=0&speed=0&badge=0&autopause=0&player_id=0&app_id=58479/embed" allow="autoplay; fullscreen; picture-in-picture" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
+
+    <div class="row-img-full">
+   <img class="img-12-col" src="02_img_02.png" alt="logo design">
+</div>
+
+<div class="row-img-full">
+    <img class="img-12-col" src="02_img_06.jpg" alt="brand app screens">
+ </div>
+
+
+    <div class="row-reverse">  <!--ROW PARENT -->
+        <div><p>To promote the brand,
+            <br class="break-desk">a dedicated event and related gadgets were designed
+            in line with its values and mission.</p></div>
+        
+            <div>
+                <img class="img-8-col" src="02_img_03.jpg" alt="festival tickets">
+            </div>
+            </div> <!--END ROW PARENT -->
+
+          
+
+            <div class="row-right">  <!--ROW PARENT -->
+                <div>
+                    <p class="semibold">COLLABORATORS</p>
+                    <p>Chiara Barberi, Sofia Bonfanti, Ilaria Reitano, Qin Wang</p></div>
+                
+                    <div>
+                        <img class="img-8-col" src="02_img_04.jpg" alt="brandbook sneak peek">
+                    </div>
+                    </div> <!--END ROW PARENT -->
+
+                    <div class="row-img-full">
+                        <img class="img-12-col" src="02_img_05.jpg" alt="brand gadgets">
+                     </div>
+
+    
+
+            
+
+<div class="next">
+<p>NEXT PROJECT</p>
+<h2><a href="../03/03.html">That’s How We Trick You</a></h2>
+</div>
+
+<!-- FOOTER -->
+<div id="contact-section">
+<h1 class="footer">Want to work together or just say hi? <a href="mailto:federica.pasquini@gmail.com" target="_blank">Let’s chat!</a></h1>
+<ul class="contacts">
+    <li><a href="https://www.behance.net/federicapasquini" target="_blank">BEHANCE</a></li>
+    <li><a href="https://www.linkedin.com/in/federica-pasquini-0403c2000" target="_blank">LINKEDIN</a></li>
+    <li><a href="https://www.instagram.com/chiccaforniaroll/?hl=it" target="_blank">INSTAGRAM</a></li>
+</ul>
+</div>
+                
+
+</div>
+</body>
+</html>
