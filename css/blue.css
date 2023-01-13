@@ -207,7 +207,7 @@ p {
     
     
     
-    @media screen and (max-width: 23.4375em) {
+    @media screen and (max-width: 25.875rem) {
         .mobile-nav-toggle, .icon-close {
             display: block;
             background-color: transparent;
@@ -401,7 +401,7 @@ position: absolute;
 }
 
 
-@media screen and (max-width: 23.4375em) { /* 375px for all browsers */
+@media screen and (max-width: 25.875em) { /* 375px for all browsers */
     
 .container {
     width: var(--max-width-m);

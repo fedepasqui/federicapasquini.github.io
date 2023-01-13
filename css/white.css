@@ -247,7 +247,7 @@ button.mobile-nav-toggle {
 }
 
 /* RESPONSIVE NAV BAR */
-@media screen and (max-width: 23.4375em) {
+@media screen and (max-width: 25.875rem) {
 
     /* icon looking */ /* DA TOGLIERE */
     /* .mobile-nav-toggle,
@@ -605,7 +605,7 @@ img.stamps {
 
 
 /* RESPONSIVE PROJECTS (NO NAV BAR) */
-@media screen and (max-width: 23.4375em) { /* 375px for all browsers */
+@media screen and (max-width: 25.875rem) { /* 375px for all browsers */
 
     .container {
         width: var(--max-width-m);
@@ -727,7 +727,7 @@ img.stamps {
 
 
 /* RESPONSIVE ABOUT */
-@media screen and (max-width: 23.4375em) { /* 375px for all browsers */
+@media screen and (max-width: 25.875rem) { /* 375px for all browsers */
     .prof-bg {
         margin-top: 0;
         margin-bottom: var(--gap-m-row);
